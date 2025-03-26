@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CumSumProd</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./cumsumprod.png" type="image/x-png" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="global_container">
+      <div class="header-grid">
+        <img src="cumsumprod.png" alt="Logo" />
+        <h1 class="titulo" style="font-size: 50px">CumSumProd</h1>
+      </div>
+      <p style="font-size: 25px">Calcula el productorio y el sumatorio.</p>
+
+      <div class="container">
+        <form>
+          <label for="modos">Seleccione un modo</label>
+          <select name="modos" id="modos" onchange="MostrarOpciones()">
+            <option value="indices">Índices</option>
+            <option value="array">Array</option>
+          </select>
+        </form>
+      </div>
+      <div id="container_options"></div>
+      <div id="resultados_finales" style="margin-top: 20px; font-size: 1.2rem">
+        <div class="resultado_sumatorio_class">
+          ∑ = <span id="resultado_sumatorio" style="font-size: 25px">--</span>
+        </div>
+        <div class="resultado_productorio_class">
+          ∏ = <span id="resultado_productorio" style="font-size: 25px">--</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
